@@ -1,0 +1,474 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Experiment: Translating marketing to tech advocacy</title>
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <style type="text/css">
+  	body {
+  		font-family: 'open sans',sans-serif;
+  		margin: 2em 4em;
+  		font-size: 20px;
+  	}
+  	table {
+  		border-collapse: collapse;
+  	}
+  	h3 {
+  	}
+  	blockquote {
+  		margin: 0;
+  		position: relative;
+  		padding: 0 0 0 50px;
+  	}
+  	blockquote::before {
+  		content:'❝';
+  		position: absolute;
+			left: 0px;
+			top: 10px;
+			font-style: italic;  		
+  		font-size: 50px;
+  	}
+  	table {
+  		border: none;
+  	}
+  	th {
+  		text-align: left;
+  		border-bottom: 2px solid #000;
+  		border-right: 2em white solid;
+  	}
+  	td {
+  		width: 40%;
+  		line-height: 1.4em;
+  		padding-right: 1em;
+  		border-collapse: collapse;
+  		vertical-align: top;
+  		padding: 1em 3em 2em 1em;
+  	}
+  	tr.explanations td::before {
+  		content: 'Explanation:';
+  		display: block;
+  		font-weight: bold;
+  		font-size: 12px;
+  	}
+  	tr.explanations td {
+  		background: #fcc;
+  		border-right: 2em white solid;
+  	}
+  	tr.explanations td:nth-child(2) {
+  		background: #cfc;
+  		border-right: 2em white solid;
+  	}
+  	.full blockquote::before {
+  		content: '';
+  	}
+  	.full blockquote {
+  		padding: 0;
+	  	}
+  	.full .explanations{
+  		display: none;
+  	}
+  	.full td {
+  		padding: 0.5em 1em;
+  	}
+  	button {
+  		border: none;
+  		background: #369;
+  		color: #fff;
+  		display: block;
+  		font-size: 24px;
+  		padding: 5px 10px;
+  	}
+  </style>
+</head>
+<body>
+<h1>Experiment: Translating marketing to tech advocacy</h1>
+
+<p>During the planning of our MWC presence, I was asked to record a script as a video for people to watch. These videos were meant to show people how to explain certain parts of our offerings to various audiences. Time was short, so <a href="https://www.youtube.com/watch?v=crDARfc-PMo">I went through the script without altering it</a>:</p>
+
+<p><iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/crDARfc-PMo?rel=0" frameborder="0" allowfullscreen></iframe></p>
+
+<p>It was tough going as the script was written as a marketing piece like a press release but not for reading it from a teleprompter. Both have different goals: in a marketing message repeating the core sound bites and being terribly excited is important. When speaking to a developer audience, you need to tone it down and really get to the meat faster.</p>
+
+<p>In the following exercise I re-wrote the script to flow better when spoken and altered the tone to be more fitting to the intended audience. This is not a criticism of the original materials, but a reminder to be aware of the need to translate to different audiences in different ways.</p>
+
+<p>The explanations on the original text should be seen as coming from a tainted, grumpy and disillusioned developer with an aversion to marketing. The explanations on the replacement texts should be seen as an addendum to explain why the wording was changed.</p>
+
+<h2>Step 1: The re-write</h2>
+
+<h3>Welcome and Introduction: Introduce yourself</h3>
+<table>
+	<thead>
+		<tr>
+			<th>Original</th>
+			<th>Replacement</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<blockquote>Hi my name is Billy McDougal. I’m a Product Marketing Manager working on Firefox Marketplace at Mozilla and I’m really excited to help you learn more about the exciting opportunities Firefox Marketplace can benefit developers/content providers such as yourself.</blockquote>
+			</td>
+
+			<td> 
+				<blockquote>Hello, I am Billy McDougal, Product Marketing Manager of the Firefox Marketplace at Mozilla. I want to show you what Firefox Marketplace offers content providers and developers.</blockquote>
+			</td>
+		</tr>
+
+		<tr class="explanations">
+			<td>
+				This starts a bit too excited. Of course the speaker is excited. It defines opportunities as exciting (which opportunities are by default). It also repeats the complex term "Firefox Marketplace" twice and then assumes that the audience is a developer or content provider and will "learn" by watching this video. 
+			</td>
+			<td>
+				You start with who you are, the "this is why what's following is legit, as I know this". You then explain who you are talking to and what will happen in the next few minutes. We don't make assumptions that people are who we want them to be and we don't assume they will learn something - we just offer the information. 
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<blockquote>My guess is you’ve already heard a bit about the Marketplace, but I’ll help you understand the value of developing open web apps and publishing them to the Firefox Marketplace.</blockquote>
+			</td>
+			<td>
+				<blockquote>The Firefox Marketplace solves the problem of finding open web applications written in HTML5. Much like closed App Stores, you can list your applications, sell them and get comments and ratings from visitors. We can promote your application and users of Firefox OS devices or the browser can find and install applications in one place. You get the benefits of simple web publication and a familiar interface for end users.</blockquote>
+			</td>
+		</tr>
+		<tr class="explanations">
+			<td>
+				More repetition of "Firefox Marketplace". This is product placement, not explaining what it is. It assumes people have heard of it - which is presumptuous. Then we get to the meat: out of a sudden this is about developing open web apps. Why not lead with this? It is also presumptuous to tell people that you will help them understand.
+			</td>
+			<td>
+				Start with the WIIFM (what is in it for me). Then bring it back to a familiar concept. Then end with the extras. 
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<blockquote>We know that native app developers and content providers creating for closed platforms have a lot of issues to contend with - the high cost of development, control over your own content, access to emerging markets and the cost of porting apps across platforms…just to name a few. Plus we know working within the strict rules of other app stores can be a big blow to innovation and creativity.  With Firefox Marketplace, Mozilla has created an entirely open app store for HTML5 apps, which we believe is leading the future of the mobile web.</blockquote>
+			</td>
+			<td>
+				<blockquote>The Firefox Marketplace is an open store for HTML5 apps without the restrictions of closed systems. You keep full control over your content and you get access to emerging markets. You are independent of hardware and operating system. You are not bound by strict publishing rules or have to follow a defined look and feel of your app. Visitors can buy apps using carrier billing or pre-paid SIM card. You neither have to pay to list your application nor need to download an SDK or development environment. We made app distribution and consumption as easy as publishing on the web. As you can convert HTML5 to native code, you can even support closed alternatives like iOS and Android.</blockquote>
+			</td>
+		</tr>
+		<tr class="explanations">
+			<td>
+				That first sentence is a book, not a sentence. It needs massive shortening. It also sounds weirdly "oh we know your pain" which can sound condescending - especially when I had these issues. It then lashes out at other marketplaces without explaining why. How are closed app stores a "blow to innovation and creativity" when the most played games are bought there? It ends with a vague explanation of what Mozilla did and then calls it the future of the mobile web, which sounds very ambitious.
+			</td>
+			<td>
+				Bam, bam, bam. Why is the marketplace different, what issues of other app stores do we fix, how do you get started? And we end with "nothing is lost, you can cover the other markets, too."
+			</td>
+		</tr>
+	</tbody>
+</table>
+<h3>Message 1:  Creating Open Web Apps Is the Fastest and Cheapest Way to Go Cross-Platform </h3>
+<table>
+	<thead>
+		<tr>
+			<th>Original</th>
+			<th>Replacement</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<blockquote>We know app development can get really expensive. We also know most developers want to reach as wide an audience as possible, which requires building a cross-platform solution. But developing native apps for multiple platforms requires a big time and cost investment.  Often, this requires paying for multiple engineers and developers. Even after the apps are developed, keeping up with ongoing updates and optimization across multiple devices is an ongoing cost that can really add up.</blockquote>
+			</td>
+			<td>
+				<blockquote>Reaching the largest amount of users is a great idea when you publish an app. This means that you can not expect all the people who want to use your app to have a certain device or platform. That's why you have a choice: either build one app for each platform or start with HTML5, and convert it to the others. Using HTML5 means you can cut down on initial engineering cost. Maintenance doesn't mean you have to keep various versions of your app on different platforms in sync. Adding new features means changing one code source. You can keep one core team of developers instead of having to hire specialists for each platform. You can innovate faster without spending a lot of money.</blockquote>
+			</td>
+		</tr>
+		<tr class="explanations">
+			<td>
+				Oh the things we know! You have no idea! Again, this can come across as condescending. Also, this whole paragraph says one thing: supporting several platforms will get expensive.
+			</td> 
+			<td>
+				What does HTML5 give you? Why is that the better option? Creating a lot from a single source is better than cat-herding lots of variations of the same product. Hammering it in with repetition works.
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<blockquote>With Firefox Marketplace, consisting entirely of HTML5 apps, web developers can use existing skills and content to create apps, without having to learn multiple native app codebases. Not only can these apps run on any device with a browser, Firefox’s synthetic APK’s enable simultaneous app publishing on both Firefox OS and Android devices with the click of a button! HTML5 apps can also be easily ported into native apps for other app stores, including Apple’s app store and Google Play, using third party tools such 
+		   as Phonegap. In short, developing for the web makes it much faster and easier to go cross-platform, and the cost of creating and maintaining your applications is reduced.</blockquote>
+		 </td> 
+		 <td>
+		   <blockquote>
+		   	By betting on HTML5, web developers can move their existing skills into the app space. Instead of learning several new environments, you use what you are familiar with and add to existing knowledge. Open Web Apps and the Firefox Marketplace run on any platform Firefox runs on: Windows, OSX, Linux, Android and Firefox OS. If you want to support iOS and submit your app in the Google Play store you can use a third party tool like Phonegap to convert it. Creating an Open Web App means you support all platforms without the pains of multi platform development.
+		   </blockquote>
+		 </td>
+		</tr>
+		<tr class="explanations">
+			<td>
+				"In short" is a warning sign. It probably means you said too much and too many complex things beforehand. This paragraph makes many assumptions and then goes into the telesales pitch of "it is as easy as pressing a button". Also, "synthetic APK" is something from Star Trek, right? Explain your special features. Nothing is as easy as pressing a button.
+			</td>
+			<td>
+				Making this simpler, there is no need to talk about synthetic APKs, instead it is interesting to point out that these apps run wherever Firefox runs.
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<blockquote>The updates you make on your own servers are instant and your users get a consistent app experience regardless of what device they are using.  For example, let me show you Chatspaces, which is a social messaging app that was built completely on the web. You will be able to see how your users get a native, real app experience regardless of what device they are using. This demo is a preview of how Chatspaces will function on Firefox OS once Web RTC lands, which will allow API access to the camera. It is already fully functional on Android and desktop.
+				</blockquote>
+			</td>
+			<td>
+				<blockquote>
+					One benefit the web has in comparison to other platforms is that changes are instant. When you fix something in a web site, all your users get the new version without having to re-install it. HTML5 apps work the same way. Modern web technology allows us to build experiences that work like native apps but are independent of device and platform. As an example, let's look at Chatspaces, a social messaging app built in HTML5. As you will see, it looks and feels just like any other app, but works on Desktop, Android and Firefox OS.
+				</blockquote>
+			</td>
+		</tr>
+		<tr class="explanations">
+			<td>
+				Repetition of the "what device they are using". It feels quite weird to have a demo that is broken on the main platform they are trying to promote and they do dive a bit into techno babble at the end here.
+			</td>
+			<td>
+				Explaining the instant nature of the web is great, but there was a missing context. Reminding people how web sites work and explaining that apps are not really that different beasts is a good idea as there are a lot of prejudices towards HTML5. There is really no need to bring in the camera and WebRTC story. The demo shows it working, so why date the screencast?
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<h3>Message 2:  Get Discovered by Firefox’s Passionate Users in New Ways and New Places</h3>
+
+<table>
+	<thead>
+		<tr>
+			<th>Original</th>
+			<th>Replacement</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<blockquote>
+					As Firefox OS works to bring the next billion users online, developers have an opportunity to distribute apps in enormous new emerging markets. There’s a huge opportunity here to get discovered and make meaningful connections with millions of first-time smartphone users. Over the last year, we’ve seen massive adoption of not just the big global apps, but local apps with country or community-specific content as well. 
+				</blockquote>
+			</td>
+			<td>
+				<blockquote>
+					Firefox OS exists to bring mobile web connectivity to emerging markets. Mozilla's goal is to get the next billion users online. Your app can allow lots of first-time smartphone users to start creating meaningful connections. They expect big global apps, but even more interesting are those that are country and community specific. What good is the app of an international video streaming service that is not available in my country when I could have a local one that works?
+				</blockquote>
+			</td>
+		</tr>
+		<tr class="explanations">
+			<td>
+				Billions, enormous, huge and gigantic. Bit much, isn't it? The point they are trying to make here is that we are going to unknown territory that is a great opportunity and that the users we are reaching are not tainted yet by the offerings of iOS & Co.
+			</td>
+			<td>
+				Let's emphasise the need for local apps here as this is the main differentiator. It is also interesting to point out that other platforms have all the shiny apps, but they may not make any sense to you in your market as you are denied their content.
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<blockquote>
+					Firefox Marketplace offers distinct benefits to developers both in 2 ways. First, consumer demand for diverse content in new markets means lots of room for new types of developer innovation. Second, developers have a big first-mover advantage here in terms of getting their apps discovered. It’s no secret that the two biggest app stores – Apple and Android—have millions of apps which makes it difficult to make a big splash, especially as a newcomer. Firefox Marketplace is the newest app store an therefore a far less crowded space for both consumers and developers. Firefox is using this opportunity to transform the app discovery process with more personalization than ever, which means your apps will be promoted to the users that will love them the most. For example, our new Marketplace Feed matches customized content and theme-based app collections around popular local and global events, like the World Cup. Other collections are based on recommendations from the local community.
+				</blockquote>
+			</td>
+			<td>
+				<blockquote>
+					As Firefox OS aims at new markets we also needed new ways to list  and find apps. It can be daunting to get your app listed in stores and it can be even more daunting to find good content. App markets based on reviews and ratings are easy to game and there is already an existing spam problem. Seeing that the Firefox Marketplace is still growing we wanted to avoid the mistakes of the past. That's why we researched new ways to promote apps to the target audiences. Apps interesting to the geographic and cultural environment get promoted in Marketplace Feeds. Marketplace Feeds collect apps around popular events, interests and locales. For example there will be World Cup app bundle to get all the important football apps in one step. This means people have to search less and get more and your app can piggy-back on the success of similar apps.
+				</blockquote>
+			</td>
+		</tr>
+		<tr class="explanations">
+			<td>
+				Both in two ways? Must be a typo. The first point is made, but not really understandable. It basically says "people want different things"? The second argument is a bit of a weird passive aggressive one: as a cynical developer I can see this as a way to hide the fact that other market places than the big ones aren't having enough apps. An empty concert hall is far less crowded. That doesn't mean the band is better. Towards the end it gets interesting. Here come the things that could make a difference for developers. 
+			</td>
+			<td>
+				If there are differences, start with them. Then explain the why. Try to mention the obvious before the reader does and thinks you hid it. 
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<blockquote>
+					The truly amazing thing about Firefox Marketplace is that while we don’t know what’s best for users in your country, we’re tapping into a massive community of local volunteers who do - and they’re helping surface relevant content in a way that’s never been done before. As a developer, you probably already know that it’s well and good to have great local content,  but without a way to surface it, it doesn’t offer much value to either developers or users. We recognize this has been a huge challenge for other app stores, so that’s why we’ve created an entirely new app discovery experience with Firefox Marketplace. Finally, if you’re interested in publishing to Firefox Marketplace, we do feature and promote apps to our massive base of Firefox users through our website, social media, events, newsletter and more.
+				</blockquote>
+			</td>
+			<td>
+				<blockquote>
+					Finding relevant content for foreign markets is an issue. Many times the developers of an app are not from the same cultural background as the audience. The worst thing you can do then is make assumptions. Mozilla is in the lucky position to have volunteers from all over the globe who help triaging and promoting relevant apps. That way you get the local know-how instead of having to guess what people in a certain markets want. Feeds and app bundles are one way of finding these apps. The real game changer in Firefox OS is that users can find apps entering their likes and needs. For example entering "football" as a search term will find apps that deal with the sport relevant to the country. In Brazil I get a different app result than I'd get in England. That way our volunteers help local users get the best results possible. The community can then promote the app through our website, social media, events, newsletter and more.
+				</blockquote>
+			</td>
+		</tr>
+		<tr class="explanations">
+			<td>
+				This starts confusing: we don't know what local markets want, but our contributors do. They help us bring content up. "they’re helping surface relevant content in a way that’s never been done before" – no explanation of what and how. That's teasing. Followed by more teasing. And then more messaging that hints at "we let our unpaid community work for us". 	
+			</td>
+			<td>
+				Instead of hinting at amazing technology to show later it makes sense to explain the use cases and how they are achieved. Explaining the unique way Mozilla can involve its community is a great message to add here.
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Message 3:  Explore the Benefits of Open</h3>
+
+<table>
+	<thead>
+		<tr>
+			<th>Original</th>
+			<th>Replacement</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<blockquote>
+					Unlike closed platforms, Firefox OS doesn’t have strict rules to play around when developing your app – which creates limitless opportunities for innovation. On Firefox OS, you can use carrier billing or any other form of taking payments; you can create new ways to monetize and advertise… you can even build your own app store. At Mozilla, we like to say, ‘Where others build walls, we tear them down’- and that’s really the beauty of being completely open. The opportunity to do something new and different in the mobile space has never been greater.
+				</blockquote>
+			</td>
+			<td>
+				<blockquote>
+					Unlike closed platforms, Firefox OS doesn’t have strict rules to play around when developing your app . This creates opportunity for innovation. You don't need to play by the rules. Instead, show us what you can do.  On Firefox OS, you can use carrier billing or any other form of taking payments. That way you can create new ways to monetize and advertise. If you want, you can even build your own app store. At Mozilla, we like to say, ‘Where others build walls, we tear them down’- and that’s the beauty of being completely open. The opportunity to do something new and different in the mobile space has never been greater.
+				</blockquote>
+			</td>
+		</tr>
+		<tr class="explanations">
+			<td>
+				There is actually not much to be annoyed about here. Maybe a bit preachy, but it has the information and is succinct
+			</td>
+			<td>
+				Shorter sentences, a slight toning down, some more call to action.
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Conclusion: Wrap up and understand next steps</h3>
+
+<table>
+	<thead>
+		<tr>
+			<th>Original</th>
+			<th>Replacement</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<blockquote>
+					Our partners, from small local developers to big global brands, are very excited about the ability to work with us and make apps that run on the biggest platform there is – the web.  Developing for the web saves you time and money and you have millions of new users ready to discover, download and use your app. Everybody wins!”
+
+					Thank you for stopping by to learn about Firefox Marketplace.
+				</blockquote>
+			</td>
+			<td>
+				<blockquote>
+					Firefox OS allows you to build apps for the biggest platform there is - the web. Developing for the web saves you time and money. You have millions of new users ready to discover, download and use your app. We already work with a lot of people: from small local developers to big global brands. So far, everyone we worked with has an interesting story to tell. Yours could be the next one.
+
+					Thank you for stopping by to learn about Firefox Marketplace.
+				</blockquote>
+			</td>
+		</tr>
+		<tr class="explanations">
+			<td>
+				Very excited, the lot of them. The ending works though. 
+			</td>
+			<td>
+				All that needed changing was making it more personal.
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2>Step 2: Shorten, and re-write, format for reading to record</h2>
+
+<p>Once the text has been translated, it is always a good plan to do another run of deleting things that are not absolutely necessary. Then it is a good idea to chunk it into easy to record parts with each paragraph being a small pause. That way you can mess up without having to re-record the whole session again.</p>
+
+<h3>Final script</h3>
+
+<p>Hello, I am Billy McDougal, Product Marketing Manager of the Firefox Marketplace at Mozilla. I want to show you what Firefox Marketplace offers content providers and developers.</p>
+
+<p>The Firefox Marketplace solves the problem of finding open web applications written in HTML5. Much like closed App Stores, you can list your applications, sell them and get comments and ratings from visitors. </p>
+
+<p>We can promote your application and users of Firefox OS devices or the browser can find and install applications in one place. You get both the benefits of simple web publication and a familiar interface for end users.</p>
+
+<p>The Firefox Marketplace is an open store for HTML5 apps without the restrictions of closed systems:</p>
+
+<ul><li>You keep full control over your content and you get access to emerging markets.</li> 
+<li>You are independent of hardware and operating system. </li>
+<li>You are not bound by strict publishing rules or have to follow a defined look and feel of your app. </li>
+<li>Visitors can buy apps using carrier billing or pre-paid SIM card. </li>
+<li>You neither have to pay to list your application nor need to download an SDK or development environment. </li></ul>
+
+<p>In essence, we made app distribution and consumption as easy as publishing on the web. As you can convert HTML5 to native code, you can even support closed alternatives like iOS and Android in a second step.</p>
+
+<p>When you publish an app it should be obvious that you want to reach the largest amount of users. This means that you can not expect all the people who want to use your app to have a certain device or platform. </p>
+
+<p>That's why you have a choice: either build one app for each platform or start with HTML5, and convert it to the others. </p>
+
+<p>Using HTML5 means a few things: </p>
+
+<ul><li>you can cut down on initial engineering cost. </li>
+<li>Maintenance doesn't mean you have to keep various versions of your app on different platforms in sync. </li>
+<li>Adding new features means changing one code source.</li>
+<li>You can keep one core team of developers instead of having to hire specialists for each platform. </li>
+<li>You can innovate faster without spending a lot of money.</li></ul>
+
+<p>By betting on HTML5, web developers can move their existing skills into the app space. Instead of learning several new environments, you use what you are familiar with and add to existing knowledge. </p>
+
+<p>Open Web Apps and the Firefox Marketplace run on any platform Firefox runs on: Windows, OSX, Linux, Android and Firefox OS. </p>
+
+<p>If you want to support iOS and submit your app in the Google Play store you can use a third party tool like Phonegap to convert it. </p>
+
+<p>Creating an Open Web App means you support all platforms without the pains of multi platform development. </p>
+
+<p>One benefit the web has in comparison to other platforms is that changes are instant. When you fix something in a web site, all your users get the new version without having to re-install it. </p>
+
+<p>HTML5 apps work the same way. Modern web technology allows us to build experiences that work like native apps. You can build apps that work offline, are small in footprint and are independent of device and platform. </p>
+
+<p>As an example, let's look at Chatspaces, a social messaging app built in HTML5. As you will see, it looks and feels just like any other app, but works on Desktop, Android and Firefox OS. </p>
+
+<p>Firefox OS exists to bring mobile web connectivity to emerging markets. Mozilla's goal is to get the next billion users online. </p>
+
+<p>Your app can allow lots of first-time smartphone users to start having meaningful connections. They expect big global apps, but even more interesting are those that make sense in the country and community they are in. What good is the app of an international video streaming service that is not available in my country when I could have a local one that works?</p> 
+
+<p>As Firefox OS aims at new markets we also needed new ways to list and find apps. </p>
+
+<p>It can be daunting to get your app listed in stores and it can be even more daunting to find good content. App markets based on reviews and ratings are easy to game and there is already an existing spam problem. </p>
+
+<p>Seeing that the Firefox Marketplace is still growing we wanted to avoid the mistakes of the past. That's why we researched new ways to promote apps to the target audiences. Apps interesting to the geographic and cultural environment get promoted in Marketplace Feeds. </p>
+
+<p>Marketplace Feeds collect apps around popular events, interests and locales. For example there will be World Cup app bundle to get all the important football apps in one step. This means people have to search less and get more and your app can piggy-back on the success of similar ones. </p>
+
+<p>Finding relevant content for foreign markets is an issue. Many times the developers of an app are not from the same cultural background as the audience. The worst thing you can do then is make assumptions. </p>
+
+<p>Mozilla is in the lucky position to have volunteers from all over the globe who help triaging and promoting relevant apps. That way you get the local know-how instead of having to guess what people in a certain markets want. Feeds and app bundles are one way of finding these apps. </p>
+
+<p>The real game changer in Firefox OS is that users can find apps by entering their likes and needs. For example entering "football" as a search term will find apps that deal with the sport relevant to the country. In Brazil I get a different app result than I'd get in England.</p> 
+
+<p>That way our volunteers help local users to get the best results possible. The community can also promote the app through our website, social media, events, newsletter and more.</p> 
+
+<p>Unlike closed platforms, Firefox OS doesn’t have strict rules to play around when developing your app . This creates opportunity for innovation. </p>
+
+<p>You don't need to play by the rules. Instead, show us what you can do. </p>
+
+<p>On Firefox OS, you can use carrier billing or any other form of taking payments. That way you can create new ways to monetize and advertise. If you want, you can even build your own app store. </p>
+
+<p>At Mozilla, we like to say, ‘Where others build walls, we tear them down’- and that’s the beauty of being completely open. 
+</p>
+
+<p>The opportunity to do something new and different in the mobile space has never been greater. </p>
+
+<p>Firefox OS allows you to build apps for the biggest platform there is - the web. Developing for the web saves you time and money. You have millions of new users ready to discover, download and use your app. </p>
+
+<p>We already work with a lot of people: from small local developers to big global brands. So far, everyone we worked with has an interesting story to tell. Yours could be the next one.</p> 
+
+<p>Thank you for stopping by to learn about Firefox Marketplace. </p>
+
+<script>
+	var b = document.createElement('button');
+	b.innerHTML	= 'hide explanations';
+	b.state = 'hide';
+	document.querySelector('h2').insertBefore(b,document.querySelector('h2').nextChild);
+	b.addEventListener('click', function(ev) {
+		if (this.state === 'hide') {
+			this.innerHTML = 'show explanations';
+			document.body.classList.add('full');
+			this.state = 'show';
+		} else {
+			this.innerHTML = 'hide explanations';
+			document.body.classList.remove('full');
+			this.state = 'hide';
+		}
+	}, false);
+
+</script>
+</body>
+</html>
